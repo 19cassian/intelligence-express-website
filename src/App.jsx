@@ -9,11 +9,11 @@ const translations = {
   en: {
     nav: { home: 'Home', about: 'About Us', services: 'Services', faq: 'FAQ', team: 'Our Team', contact: 'Contact', track: 'Track Parcel' },
     hero: {
-      badge: 'East Africa & Global Cargo Leaders',
-      titleA: 'Powering Global Commerce from',
-      titleB: 'East Africa',
-      titleC: 'to the World.',
-      desc: 'Express door-to-door parcel delivery, seamless regional cross-border freighting, and global ocean & air cargo solutions tailored for reliability and speed.',
+      badge: 'Tanzania & East Africa Cargo Leaders',
+      titleA: 'Powering Bussiness with Logistic Services accross',
+      titleB: 'Tanzania & East Africa',
+      titleC: 'on time.',
+      desc: 'Express door-to-door parcel delivery, seamless regional cross-border freighting, and East Africa & air cargo solutions tailored for reliability and speed.',
       trackLabel: 'Live Shipment Tracking',
       trackPlaceholder: 'Enter Tracking ID (e.g., IE-98402)',
       trackBtn: 'Track Now',
@@ -27,12 +27,12 @@ const translations = {
     },
     ticker: 'Trusted by Global Trade Leaders & Enterprise Retailers',
     about: {
-      kicker: 'Our Heritage & Global Reach',
-      title: 'Connecting Tanzania & East Africa directly to global market hubs.',
+      kicker: 'Our Heritage & Cross-boarder Reach',
+      title: 'Connecting Tanzania & East Africa directly as  market hubs.',
       p1: 'Founded with a vision to revolutionize logistics across Tanzania and the broader East African region,',
       p1b: 'Intelligence Express',
       p1c: 'combines deep local ground infrastructure with international air and maritime networks.',
-      p2: 'Whether transporting vital business parcels from Dar es Salaam to regional capitals like Nairobi and Kampala, or clearing heavy industrial cargo through major maritime ports, our mission is built on speed, security, and absolute transparency.',
+      p2: 'Whether transporting vital business parcels from Dar es Salaam nationalwide or to regional capitals like Nairobi and Kampala, or clearing heavy industrial cargo through major maritime ports, our mission is built on speed, security, and absolute transparency.',
       tag1: 'Licensed Customs Clearing',
       tag2: 'End-to-End Warehousing',
       stat1: 'Parcels Delivered', stat1d: 'Annual doorstep fulfilled orders across East Africa.',
@@ -58,18 +58,43 @@ const translations = {
       { q: 'Do you handle customs clearance for international ocean and air freight?', a: 'Yes. Our in-house customs brokerage team manages all paperwork, duties calculation, regulatory compliance, and clearance processes directly at sea ports and international airports.' },
       { q: 'What types of goods or cargo can be transported?', a: 'We accommodate everything from small confidential documents and e-commerce parcels to heavy industrial equipment, perishable goods, and full container commercial loads.' }
     ],
-    testimonialsTitle: { kicker: 'Client Feedback', title: 'What Our Trade Partners Say' },
-    testimonials: [
-      { quote: 'Intelligence Express delivered our heavy equipment from Dar Port to Kampala ahead of schedule. Their customs handling is unmatched.', name: 'Juma Rashidi', title: 'Logistics Manager, EastCorp', location: 'Dar es Salaam, Tanzania' },
-      { quote: 'The live tracking feature and prompt customer care give us 100% peace of mind for our regional e-commerce shipments.', name: 'Sarah Chen', title: 'Supply Chain Director', location: 'Nairobi, Kenya' },
-      { quote: 'Reliable air cargo forwarding with clear invoicing. They are our go-to partner for all Dubai-Tanzania imports.', name: 'Ahmed Al-Maktoum', title: 'Trade Director', location: 'Dubai, UAE' }
-    ],
+    testimonialsTitle: { 
+  kicker: 'Customer Reviews', 
+  title: 'What Our Business Partners/Customers Say' 
+}, 
+testimonials: [ 
+  { 
+    quote: 'Intelligence Express transported our school equipment from the Port of Kenya to Arusha ahead of schedule. Their customs clearance handling is unmatched.', 
+    name: 'Juma Rashidi', 
+    title: 'Logistics Manager, St. Jude Schools (Arusha)', 
+    location: 'Arusha, Tanzania' 
+  }, 
+  { 
+    quote: 'Real-time tracking and excellent customer service give us absolute peace of mind for our regional shipments.', 
+    name: 'Sarah Mukotya', 
+    title: 'Supply Chain Director', 
+    location: 'Nairobi, Kenya' 
+  }, 
+  { 
+    quote: 'Reliable air freight with high security and transparency. They are our main partner for China-Tanzania imports.', 
+    name: 'David Sports wear', 
+    title: 'Trader', 
+    location: 'Dar es Salaam, Tanzania' 
+  }, 
+  { 
+    quote: 'They are the leaders in this industry for reliable air freight with high security and transparency. They successfully handled my Dubai-Tanzania phone shipping service.', 
+    name: 'Zahor Matelephones', 
+    title: 'Trader', 
+    location: 'Dar es Salaam, Tanzania' 
+  } 
+],
+
     teamTitle: { kicker: 'Leadership', title: 'Meet Our Operations Team', desc: 'Seasoned professionals driving logistics excellence across Africa.' },
     team: [
-      { name: 'David K. Temba', role: 'Chief Executive Officer' },
-      { name: 'Amina Kassim', role: 'Director of Customs' },
-      { name: 'Marcus Vance', role: 'Head of Ocean Cargo' },
-      { name: 'Grace Mbeki', role: 'Regional Lead' }
+      { name: 'Amrisaly S. Mkwizu', role: 'Chief Executive Officer' },
+      { name: 'Michael Datan', role: 'Head of Operations' },
+      { name: 'Ally Mkwizu', role: 'Managing director' },
+      { name: 'Bliss Kimaro', role: 'HR & Markerting specialist' }
     ],
     newsletter: {
       title: 'Subscribe to Logistics Insights',
@@ -81,9 +106,9 @@ const translations = {
     },
     contact: {
       title: 'Send Us a Message',
-      desc: 'Request a freight quote or query about specialized logistics solutions.',
-      name: 'Your Name', namePh: 'e.g. John Doe',
-      email: 'Email Address', emailPh: 'john@example.com',
+      desc: 'Request a freight quote or query about specialized logistics solutions or testimonials.',
+      name: 'Your Name', namePh: 'e.g. Amrisaly Mkwizu',
+      email: 'Email Address', emailPh: 'Amri@gmail.com',
       service: 'Service Required',
       serviceOptions: ['Domestic Courier Express', 'East Africa Cross-Border Freight', 'International Air/Sea Cargo', 'Customs Clearance Services'],
       message: 'Message Detail', messagePh: 'Specify package details, destination, or inquiries...',
@@ -91,7 +116,7 @@ const translations = {
       submittedTitle: 'Message Received!',
       submittedDesc: 'Thank you for reaching out. Our dispatch team will contact you within 2 hours.',
       hq: 'Headquarters',
-      address: 'Intelligence Express Logistics Hub, Sam Nujoma Road, Dar es Salaam, Tanzania.',
+      address: 'Intelligence Express,Aggrey & Msimbazi St., Dar es Salaam, Tanzania.',
       mapTitle: 'Interactive Map Location',
       mapDesc: 'Dar es Salaam Port & Airport Logistics Hub'
     },
@@ -101,9 +126,9 @@ const translations = {
   sw: {
     nav: { home: 'Nyumbani', about: 'Kuhusu Sisi', services: 'Huduma', faq: 'Maswali', team: 'Timu Yetu', contact: 'Wasiliana', track: 'Fuatilia Kifurushi' },
     hero: {
-      badge: 'Viongozi wa Mizigo Afrika Mashariki na Duniani',
-      titleA: 'Tunaendesha Biashara ya Kimataifa Kutoka',
-      titleB: 'Afrika Mashariki',
+      badge: 'Tanzania & East africa cargo leaders',
+      titleA: 'Tunatoa huduma za usafirishaji wa Vifurushi',
+      titleB: 'Tanzania Afrika Mashariki',
       titleC: 'Hadi Duniani Kote.',
       desc: 'Huduma za haraka za kufikisha vifurushi mlangoni, usafirishaji wa mipakani bila usumbufu, na huduma za mizigo ya baharini na anga kwa uhakika na kasi.',
       trackLabel: 'Fuatilia Mzigo Papo Hapo',
@@ -152,16 +177,18 @@ const translations = {
     ],
     testimonialsTitle: { kicker: 'Maoni ya Wateja', title: 'Wanachosema Washirika/Wateja Wetu wa Biashara' },
     testimonials: [
-      { quote: 'Intelligence Express walisafirisha vifaa vyetu vizito kutoka Bandari ya Dar hadi Kampala kabla ya wakati. Ushughulikiaji wao wa forodha hauna kifani.', name: 'Juma Rashidi', title: 'Meneja wa Usafirishaji, EastCorp', location: 'Dar es Salaam, Tanzania' },
-      { quote: 'Huduma ya ufuatiliaji papo hapo na huduma bora kwa wateja hutupa uhakika kamili kwa usafirishaji wetu wa kikanda.', name: 'Sarah Chen', title: 'Mkurugenzi wa Ugavi', location: 'Nairobi, Kenya' },
-      { quote: 'Usafirishaji wa mizigo ya anga wa kuaminika na ankara wazi. Ni mshirika wetu mkuu wa uagizaji Dubai-Tanzania.', name: 'Ahmed Al-Maktoum', title: 'Mkurugenzi wa Biashara', location: 'Dubai, UAE' }
+      { quote: 'Intelligence Express walisafirisha vifaa vyetu vya Shuleni kutoka Bandari ya Kenya hadi Arusha kabla ya wakati. Ushughulikiaji wao wa forodha hauna kifani.', name: 'Juma Rashidi', title: 'Meneja wa Usafirishaji, St Jude Schools(Arusha)', location: 'Arusha, Tanzania' },
+      { quote: 'Huduma ya ufuatiliaji papo hapo na huduma bora kwa wateja hutupa uhakika kamili kwa usafirishaji wetu wa kikanda.', name: 'Sarah Mukotya', title: 'Mkurugenzi wa Ugavi', location: 'Nairobi, Kenya' },
+      { quote: 'Usafirishaji wa mizigo ya anga wa kuaminika na usalama mkubwa na uwazi. Ni mshirika wetu mkuu wa uagizaji China-Tanzania.', name: 'David Sports wear', title: 'Mfanyabiashara', location: 'Dar es salaam, Tanzania' },
+      { quote: 'Hawa ndio vinara katika sekta hii ya usafirishaji wa mizigo ya anga wa kuaminika na usalama mkubwa na uwazi. Walinifanikishia huduma ya usafirishaji wa simu  Dubai-Tanzania.', name: 'Zahor Matelephones', title: 'Mfanyabiashara', location: 'Dar es salaam, Tanzania' }
+
     ],
     teamTitle: { kicker: 'Uongozi', title: 'Kutana na Timu Yetu ya Uendeshaji', desc: 'Wataalamu wenye uzoefu wanaoendesha ubora wa usafirishaji Afrika.' },
     team: [
-      { name: 'David K. Temba', role: 'Afisa Mkuu Mtendaji' },
-      { name: 'Amina Kassim', role: 'Mkurugenzi wa Forodha' },
-      { name: 'Marcus Vance', role: 'Msimamizi wa Mizigo ya Baharini' },
-      { name: 'Grace Mbeki', role: 'Kiongozi wa Kikanda' }
+      { name: 'Amrisaly S. Mkwizu', role: 'Afisa Mtendaji mkuu' },
+      { name: 'Michael Dastan', role: 'Mkuu wa Oparesheni' },
+      { name: 'Ally Mkwizu', role: 'Meneja mkuu' },
+      { name: 'Bliss Kimaro', role: 'HR & Mtaalamu wa masoko' }
     ],
     newsletter: {
       title: 'Jiandikishe kwa Taarifa za Usafirishaji',
@@ -174,8 +201,8 @@ const translations = {
     contact: {
       title: 'Tutumie Ujumbe',
       desc: 'Omba bei ya mzigo au uliza kuhusu huduma maalum za usafirishaji.',
-      name: 'Jina Lako', namePh: 'mfano, John Doe',
-      email: 'Anwani ya Barua Pepe', emailPh: 'john@example.com',
+      name: 'Jina Lako', namePh: 'mfano, Amrisaly Mkwizu',
+      email: 'Anwani ya Barua Pepe', emailPh: 'Amrisaly@gmail.com',
       service: 'Huduma Unayohitaji',
       serviceOptions: ['Kusafirisha Haraka Ndani ya Nchi', 'Mizigo ya Mipakani Afrika Mashariki', 'Mizigo ya Kimataifa Anga/Bahari', 'Huduma za Uhamisho wa Forodha'],
       message: 'Maelezo ya Ujumbe', messagePh: 'Eleza maelezo ya kifurushi, marudio, au maswali...',
@@ -183,7 +210,7 @@ const translations = {
       submittedTitle: 'Ujumbe Umepokewa!',
       submittedDesc: 'Asante kwa kuwasiliana nasi. Timu yetu itawasiliana nawe ndani ya masaa 2.',
       hq: 'Makao Makuu',
-      address: 'Intelligence Express Logistics Hub, Barabara ya Sam Nujoma, Dar es Salaam, Tanzania.',
+      address: 'Intelligence Express Ltd , Aggrey & Msimbazi st, Dar es Salaam, Tanzania.',
       mapTitle: 'Mahali kwenye Ramani',
       mapDesc: 'Kituo cha Bandari na Uwanja wa Ndege Dar es Salaam'
     },
