@@ -5,6 +5,14 @@ import {
   MapPin, Phone, Mail, Check, ChevronDown, Languages
 } from 'lucide-react';
 
+import intelligenceImg from './assets/intelligence.jpg'
+import amriImg from './assets/amrisaly.jpg'
+import mikeImg from './assets/mike.jpg'
+import abasImg from './assets/abas.jpg'
+import blissImg from './assets/bliss.jpg'
+
+
+
 const translations = {
   en: {
     nav: { home: 'Home', about: 'About Us', services: 'Services', faq: 'FAQ', team: 'Our Team', contact: 'Contact', track: 'Track Parcel' },
@@ -679,10 +687,10 @@ export default function App() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { ...t.team[0], img: 'assets/intelligence.jpg' },
-                { ...t.team[1], img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400' },
-                { ...t.team[2], img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400' },
-                { ...t.team[3], img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400' }
+                { ...t.team[0], img: amriImg },
+                { ...t.team[1], img: mikeImg },
+                { ...t.team[2], img: abasImg },
+                { ...t.team[3], img: blissImg }
               ].map((member, index) => (
                 <div key={index} className={`rounded-2xl border overflow-hidden group transition-all ${bgCard} ${bgCardHover}`}>
                   <div className="h-48 overflow-hidden relative">
