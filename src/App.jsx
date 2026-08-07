@@ -15,9 +15,8 @@ import blissImg from './assets/bliss.jpg'
 
 const translations = {
   en: {
-    nav: { home: 'Home', about: 'About Us', services: 'Services', faq: 'FAQ', team: 'Our Team', contact: 'Contact', track: 'Track Parcel' },
+    nav: { home: 'Home', about: 'About', services: 'Services', faq: 'FAQ', team: ' Team', contact: 'Contact', track: 'Track Parcel' },
     hero: {
-      badge: 'Tanzania & East Africa Cargo Leaders',
       titleA: 'Powering Bussiness with Logistic Services accross',
       titleB: 'Tanzania & East Africa',
       titleC: 'on time.',
@@ -128,7 +127,7 @@ const translations = {
       mapTitle: 'Interactive Map Location',
       mapDesc: 'Dar es Salaam Port & Airport Logistics Hub'
     },
-    footer: { rights: 'All rights reserved.', privacy: 'Privacy Policy', terms: 'Terms of Service', insurance: 'Cargo Insurance', top: 'Top' }
+    footer: { rights: 'All rights reserved.', privacy: 'Privacy Policy', terms: 'Terms of Service',insurance:'Developed By Megatechologies' ,top: 'Top' }
   },
 
   sw: {
@@ -398,11 +397,8 @@ export default function App() {
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-            <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center space-x-2 bg-[#FF522B]/10 border border-[#FF522B]/30 px-3 py-1.5 rounded-full text-[#FF522B] text-xs sm:text-sm font-semibold tracking-wide uppercase">
-                <span className="w-2 h-2 rounded-full bg-[#FF522B] animate-ping" />
-                <span className="font-stencil tracking-wider">{t.hero.badge}</span>
-              </div>
+            <div className="lg:col-span-7 space-y-6 ">
+              
 
               <h1 className={`text-4xl sm:text-5xl lg:text-6xl uppercase tracking-tight leading-none font-stencil ${textHeading}`}>
                 {t.hero.titleA} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF522B] to-orange-400">{t.hero.titleB}</span> {t.hero.titleC}
@@ -869,6 +865,7 @@ export default function App() {
                 <a href="#home" className="hover:text-[#FF522B]">{t.footer.privacy}</a>
                 <a href="#home" className="hover:text-[#FF522B]">{t.footer.terms}</a>
                 <a href="#home" className="hover:text-[#FF522B]">{t.footer.insurance}</a>
+
               </div>
 
               <a
