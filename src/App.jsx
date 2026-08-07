@@ -131,7 +131,7 @@ const translations = {
   },
 
   sw: {
-    nav: { home: 'Nyumbani', about: 'Kuhusu Sisi', services: 'Huduma', faq: 'Maswali', team: 'Timu Yetu', contact: 'Wasiliana', track: 'Fuatilia Kifurushi' },
+    nav: { home: 'Nyumbani', about: 'Kuhusu', services: 'Huduma', faq: 'Maswali', team: 'Timu', contact: 'Wasiliana', track: 'Fuatilia Kifurushi' },
     hero: {
       badge: 'Tanzania & East africa cargo leaders',
       titleA: 'Tunatoa huduma za usafirishaji wa Vifurushi',
@@ -221,7 +221,7 @@ const translations = {
       mapTitle: 'Mahali kwenye Ramani',
       mapDesc: 'Kituo cha Bandari na Uwanja wa Ndege Dar es Salaam'
     },
-    footer: { rights: 'Haki zote zimehifadhiwa.', privacy: 'Sera ya Faragha', terms: 'Masharti ya Huduma', insurance: 'Bima ya Mizigo', top: 'Juu' }
+    footer: { rights: 'Haki zote zimehifadhiwa.', privacy: 'Sera ya Faragha', terms: 'Masharti ya Huduma', insurance: 'imetengenezwa na Megatechnologies', top: 'Juu' }
   }
 };
 
