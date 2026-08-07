@@ -40,7 +40,7 @@ const translations = {
       p1: 'Founded with a vision to revolutionize logistics across Tanzania and the broader East African region,',
       p1b: 'Intelligence Express',
       p1c: 'combines deep local ground infrastructure with international air and maritime networks.',
-      p2: 'Whether transporting vital business parcels from Dar es Salaam nationalwide or to regional capitals like Nairobi and Kampala, or clearing heavy industrial cargo through major maritime ports, our mission is built on speed, security, and absolute transparency.',
+      p2: 'Whether transporting vital business parcels from Dar es Salaam nationwide or to regional capitals like Nairobi and Kampala, or clearing heavy industrial cargo through major maritime ports, our mission is built on speed, security, and absolute transparency.',
       tag1: 'Licensed Customs Clearing',
       tag2: 'End-to-End Warehousing',
       stat1: 'Parcels Delivered', stat1d: 'Annual doorstep fulfilled orders across East Africa.',
@@ -66,36 +66,36 @@ const translations = {
       { q: 'Do you handle customs clearance for international ocean and air freight?', a: 'Yes. Our in-house customs brokerage team manages all paperwork, duties calculation, regulatory compliance, and clearance processes directly at sea ports and international airports.' },
       { q: 'What types of goods or cargo can be transported?', a: 'We accommodate everything from small confidential documents and e-commerce parcels to heavy industrial equipment, perishable goods, and full container commercial loads.' }
     ],
-    testimonialsTitle: { 
-  kicker: 'Customer Reviews', 
-  title: 'What Our Business Partners/Customers Say' 
-}, 
-testimonials: [ 
-  { 
-    quote: 'Intelligence Express transported our school equipment from the Port of Kenya to Arusha ahead of schedule. Their customs clearance handling is unmatched.', 
-    name: 'Juma Rashidi', 
-    title: 'Logistics Manager, St. Jude Schools (Arusha)', 
-    location: 'Arusha, Tanzania' 
-  }, 
-  { 
-    quote: 'Real-time tracking and excellent customer service give us absolute peace of mind for our regional shipments.', 
-    name: 'Sarah Mukotya', 
-    title: 'Supply Chain Director', 
-    location: 'Nairobi, Kenya' 
-  }, 
-  { 
-    quote: 'Reliable air freight with high security and transparency. They are our main partner for China-Tanzania imports.', 
-    name: 'David Sports wear', 
-    title: 'Trader', 
-    location: 'Dar es Salaam, Tanzania' 
-  }, 
-  { 
-    quote: 'They are the leaders in this industry for reliable air freight with high security and transparency. They successfully handled my Dubai-Tanzania phone shipping service.', 
-    name: 'Zahor Matelephones', 
-    title: 'Trader', 
-    location: 'Dar es Salaam, Tanzania' 
-  } 
-],
+    testimonialsTitle: {
+      kicker: 'Customer Reviews',
+      title: 'What Our Business Partners/Customers Say'
+    },
+    testimonials: [
+      {
+        quote: 'Intelligence Express transported our school equipment from the Port of Kenya to Arusha ahead of schedule. Their customs clearance handling is unmatched.',
+        name: 'Juma Rashidi',
+        title: 'Logistics Manager, St. Jude Schools (Arusha)',
+        location: 'Arusha, Tanzania'
+      },
+      {
+        quote: 'Real-time tracking and excellent customer service give us absolute peace of mind for our regional shipments.',
+        name: 'Sarah Mukotya',
+        title: 'Supply Chain Director',
+        location: 'Nairobi, Kenya'
+      },
+      {
+        quote: 'Reliable air freight with high security and transparency. They are our main partner for China-Tanzania imports.',
+        name: 'David Sports wear',
+        title: 'Trader',
+        location: 'Dar es Salaam, Tanzania'
+      },
+      {
+        quote: 'They are the leaders in this industry for reliable air freight with high security and transparency. They successfully handled my Dubai-Tanzania phone shipping service.',
+        name: 'Zahor Matelephones',
+        title: 'Trader',
+        location: 'Dar es Salaam, Tanzania'
+      }
+    ],
 
     teamTitle: { kicker: 'Leadership', title: 'Meet Our Operations Team', desc: 'Seasoned professionals driving logistics excellence across Africa.' },
     team: [
@@ -831,18 +831,34 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className={`h-56 rounded-2xl border overflow-hidden relative flex items-center justify-center ${bgCard}`}>
-                  <div className="text-center p-6 space-y-2">
-                    <div className="w-12 h-12 rounded-full bg-[#FF522B]/20 text-[#FF522B] mx-auto flex items-center justify-center">
-                      <MapPin size={22} strokeWidth={2} />
-                    </div>
-                    <p className={`font-semibold text-sm ${textHeading}`}>{t.contact.mapTitle}</p>
-                    <p className={`text-xs ${textMuted}`}>{t.contact.mapDesc}</p>
+                {/* --- Fixed Map Block ---
+                    1) Uses a real Google Maps EMBED url (output=embed), not the
+                       google.com homepage, which blocks framing via X-Frame-Options.
+                    2) The iframe is now a direct child of the relative/overflow-hidden
+                       wrapper, so absolute+w-full+h-full actually fills the box,
+                       instead of being nested inside a 48px icon circle.
+                    3) Every div below has a matching closing tag. */}
+                <div className={`h-56 rounded-2xl border overflow-hidden relative ${bgCard}`}>
+                  <iframe
+                    src="https://www.google.com/maps?q=Aggrey+St+%26+Msimbazi+St,+Dar+es+Salaam,+Tanzania&output=embed"
+                    className="absolute top-0 left-0 w-full h-full"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    title="Office Location Map on Aggrey St"
+                  ></iframe>
+
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white px-4 py-3 text-center pointer-events-none">
+                    <p className="font-semibold text-sm">{t.contact.mapTitle}</p>
+                    <p className="text-xs text-slate-200">{t.contact.mapDesc}</p>
                   </div>
                 </div>
+
               </div>
 
             </div>
+{/*--------*/}
 
             <div className={`mt-20 pt-8 border-t flex flex-col md:flex-row items-center justify-between gap-4 text-xs ${isDark ? 'border-slate-800 text-slate-500' : 'border-slate-200 text-slate-500'}`}>
               <div>
